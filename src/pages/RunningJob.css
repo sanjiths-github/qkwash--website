@@ -1,0 +1,168 @@
+
+.container-box {
+    position: absolute;
+    top: 201px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+  .runningjob{
+  position: absolute;
+  top: 130px;
+  left: 200px;
+  font-size: 25px;
+  font-weight: bold;
+  }
+  
+
+  .row-runningjob {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+  }
+  
+
+  .box-row {
+    width: 570px;
+    height: 270px;
+    background-color: #f0f0f0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+  }
+
+
+  .box-content1 {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+  }
+  
+
+  .text-block {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .text-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+
+  .text-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    color: #555;
+  }
+  
+
+  .progress-circle1 {
+    position: relative;
+    margin-left: 380px;
+    margin-top: 85px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-ring1 {
+    transform: rotate(-100deg); 
+  }
+  
+  .progress-ring__background1 {
+    fill: none;
+    stroke: #e6e6e6; 
+    stroke-width: 10;
+  }
+  
+  .progress-ring__circle1 {
+    fill: none;
+    stroke: #3498db; 
+    stroke-width: 10;
+    stroke-linecap: round; 
+    stroke-dasharray: 320.6; 
+    stroke-dashoffset: 282.6; 
+    animation: progress-animation 2s ease-in-out forwards; 
+  }
+  
+  
+ 
+  @keyframes progress-animation {
+    from {
+      stroke-dashoffset: 282.6; 
+    }
+    to {
+      stroke-dashoffset: 155.43; 
+    }
+  }
+  
+  .progress-percentage1 {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .container-box2 {
+    position: absolute;
+    top: 201px;
+    left: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+  .container-box3 {
+    position: absolute;
+    top: 501px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+
+  
+  .container-box4 {
+    position: absolute;
+    top: 501px;
+    left: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .box-row {
+      width: 10%; 
+    }
+  }
+  

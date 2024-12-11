@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+
+.Running-Job{
+    font-size: 25px;
+    color: rgb(71, 69, 69);
+    font-weight: bold;
+    position: absolute;
+    top: 303px;
+    left: 150px;
+
+}
+
+
+.container1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(570px, 2fr)); 
+    gap: 20px; 
+    width: calc(570px * 2 + 20px); 
+    height: calc(250px * 2 + 20px); 
+    margin-top: 280px; 
+    margin-left: 150px; 
+  }
+  
+
+  .box {
+    width: 100%;
+    position: relative;
+    top : -120px;
+    height: 270px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  .box:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  }
+
+
+
+
+  .hub-details .hub-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .hub-details .hub-subtext {
+    font-size: 16px;
+    color: #555;
+  }
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20px;
+    gap: 0.1px; 
+    text-align: left;
+  }
+  
+  
+  .machine-details .machine-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .machine-details .machine-subtext {
+    font-size: 16px;
+    color: #777;
+  }
+  .progress-circle {
+    position: relative;
+    margin-left: 300px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg); 
+  }
+  
+  .progress-ring__background {
+    fill: none;
+    stroke: #e6e6e6; 
+    stroke-width: 10;
+  }
+  
+  .progress-ring__circle {
+    fill: none;
+    stroke: #3498db; 
+    stroke-width: 10;
+    stroke-linecap: round; 
+    stroke-dasharray: 282.6; 
+    stroke-dashoffset: 282.6; 
+    animation: progress-animation 2s ease-in-out forwards; 
+  }
+  
+  
+  @keyframes progress-animation {
+    from {
+      stroke-dashoffset: 282.6; 
+    }
+    to {
+      stroke-dashoffset: 155.43; 
+    }
+  }
+  
+  .progress-percentage {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .error-circle {
+    width: 140px;
+    height: 140px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.1), -8px -8px 16px rgba(255, 255, 255, 0.8);
+    transition: opacity 0.5s ease;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 15px;
+    position: absolute;
+    left: 20px;
+    font-weight: bold;
+    opacity: 1;
+    animation: showText 0.5s ease-in-out forwards; /* Smooth transition to show error message */
+  }
+  
+  
+  .box2-circle {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+  
+  .box2-circle.hidden {
+    opacity: 0;
+  }
+
+  .History{
+    font-size: 25px;
+    color: rgb(71, 69, 69);
+    font-weight: bold;
+    position: absolute;
+    top: 700px;
+    left: 150px;
+  }
+
+  
+
+body {
+  margin: 0;
+  padding-bottom: 100px; 
+}
+
+
+
+
+.container5 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(570px, 2fr)); 
+  gap: 20px; 
+  width: calc(570px * 2 + 20px); 
+  height: calc(250px * 2 + 20px); 
+  margin-top: 280px; 
+  margin-left: 150px; 
+}
+
+.box1 {
+  width: 500px;
+  position: relative;
+  top : -500px;
+  left: 50px;
+  height: 370px;
+  background: #ffffff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 1px solid #ddd; 
+  border-radius: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.box1:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+
+.loader-container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+
+.progress-ring3 {
+  transform: rotate(-90deg); 
+}
+
+.progress-ring__background3 {
+  fill: none;
+  stroke: #e6e6e6;
+  stroke-width: 10; 
+}
+
+.progress-ring__circle3 {
+  fill: none;
+  stroke: #28a745; 
+  stroke-width: 10; 
+  stroke-linecap: round; 
+  stroke-dasharray: 314.16; 
+  stroke-dashoffset: 0; 
+  transition: stroke-dashoffset 2s ease-in-out;
+}
+
+
+.loader-percentage3 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745; 
+}
+
+
+.content-history1{
+  position: absolute;
+  top: 230px;
+}
+
+
+
+
+
+  
+
+  @media (max-width: 1200px) {
+    .container1 {
+      grid-template-columns: 1fr;
+      position: absolute;
+      top: 180px;
+      width: 400px;
+      margin-left: 50px; 
+    }
+    .Running-Job{
+      position: absolute;
+      left: 50px;
+      top: 290px;
+    }
+  }
+  .white-box {
+    width: 1170px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    border-radius: 8px; 
+  
+  }
+  
+
+.content {
+  text-align: left;
+  position: absolute;
+  left: 30px;
+  top: 340px;
+}
+
+.heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  color: #817d7d;
+  margin-bottom: 10px;
+}
+
+.code-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 2px;
+  height: 25px;
+  margin-top: 25px;
+  width: fit-content;
+}
+
+.code {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.code-value {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
+.copy-button:hover {
+  color: #000000;
+}
+
+
+.image-container {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+  position: absolute;
+  left: 900px;
+  top: 320px;
+}
